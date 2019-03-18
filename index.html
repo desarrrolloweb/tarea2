@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Tarea 2 -->
+<html>
+
+<head>
+	<title>Diferentes tipos de Estilos</title>
+	<meta charset="utf-8">
+	<meta name="description" content="todos los tipos de estilos">
+	<meta name="keywords" content="estilos">
+	<! --añadiendo estilos con la directiva .@import-->
+	<style>
+			@import 'css/import.css';
+	</style>
+	<! --añadiendo estilos de forma interna al encabezado h2-->
+	<style>
+		h2{color:green;}
+	</style>
+	<!-- añadiendo estilos externos, esta es la mejor forma-->
+	<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- Contenido de la página web -->
+<body>
+	<h1 style="color:red">TODO ES UNA CAJA</h1>
+	<p>
+		Uno de los conceptos más importantes que debemos recordar a la hora de elaborar CSS es que todos y cada uno de los elementos de mi páginaweb son cajas.</p>
+	<p>
+		Eso, exactamente, ¿Qué significa?. Significa que todos los elementos que representan algo en HTML tiene la siguietne estructura visual:
+	</p>
+	Con este modelo debemos por lo tanto distinguir las siguientes zonas:<img src="img/ModeloCaja.jpg" alt="caja HTML con sus partes, contenido, padding, border y margen." title="caja HTML con sus partes">
+	<! --Estos estilos se han añadidocon la directiva .@import-->
+	<ul>
+			<li>El contenido que es lo "importante", el texto en las etiuqetas de texto, la imagen en las etiuqetas de magen, etc.</li>
+			<li>El padding que es la distancia que existe entre el contenido y el borde de la caja.</li>
+			<li>El borde que el el elemento que marca la división entre el elemneto y el resto de los elementos de la página.</li>
+			<li>El margen que es la distancia entre el elementos y el resto de los elementos de la página.</li>
+	</ul>
+		<! --añadiendo estilos de forma interna (están en el head)-->
+		<h2>Comportamiento de una caja ( Estilos con la etiqueta style)</h2>
+		<p>Los elementos en bloque son elementos que, independientemente de la anchura que tengan, se separan verticalemtne de los elementos anteriore y posteriores.</p>
+		<p>Es como si "provocaran" un salto de línea antes y uno después ( figuradamente hablando).</p>
+		<p>en cambio, los elementos en línea se van sucediendo a lo largo de la misma línea, mienras caben, uno detrás de otro y de izquierda a derecha ( almenos en nuestro idioma).Cuando no caben pasan a la línea siguiente. digamos que "fluyen" dependiendo de la anchura de la pantalla de nuestro navegador.</p>
+		<p>Representado gráficamente sería algo así:</p>
+		<img src="img/bloque.jpg" alt="Imagen de dos elementos en diferentes líneas, por tanto de bloque." title="Elementos de bloque">
+		<img src="img/linea.jpg" alt="Imagen de tres elementos en la misma línea porque son elmentos de línea." title="Elementos de línea">
+		<h4>NOTA: Es muy importante saber qué tipo de elemneto es cada etiqueta que usamos.</h4>
+
+</body>
+</html>
