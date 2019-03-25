@@ -1,11 +1,32 @@
-* {font-family: "Courir New", Courier, monospace;}
-/** Esto es un comentario 
-h4{color:pink;}
-li
-{color:blue;}
-h2{color:green;}
-h1{color:red;}
-Esto es el final del comentario **/
+.titulo{
+	text-align: center;
+}
+legend 
+		{
+			/*border:1px solid black;*/
+			border-style:solid;
+			border-color:black;
+			border-width:thin;
+			border-radius:25px;
+			background-color: white;
+		}
+#fondo1
+		{
+			background-color:lightgrey;
+			border-radius:25px; 
+
+		}
+#fondo2
+		{
+			background-color:beige;
+			border-radius:25px; 
+
+		}	
+ul {
+	list-style-type:none;
+}
+
+/** {font-family: "Courir New", Courier, monospace;}
 #titulo {
 	background-color:grey;
 	color:white;
@@ -21,5 +42,5 @@ li{color:red;}
 li li {color:green;}
 div > a{border:5px solid green;}
 h2+p {background-color:green;}
-p~h3.antes{background-color:pink;}
-img[alt="ejemplo"]{border:5px solid grey;}
+p~h3{color:pink;}
+img[alt="ejemplo"]{border:5px solid grey;}*/
