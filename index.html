@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Diferentes tipos de Selectores</title>
+	<title>Formulario</title>
 	<meta charset="utf-8">
 	<meta name="description" content="todos los tipos de estilos">
 	<meta name="keywords" content="estilos">
@@ -17,44 +17,78 @@
 
 <!-- Contenido de la página web -->
 <body>
-	<h1 id="titulo">CSS:Sintáxis y selectores</h1>
-	<hr>
-	<h2>Sintáxis CSS</h2>
-	<p>Un conjunto de reglas CSS consta de un selector y un bloque de declaración:</p>
-	<img src="img/selector.gif" alt="CSS selector partes." title="Partes del selector">
-	<ul>
-		<li>Los puntos selector para el elemento HTML que desea estilo.
+	<h1 class="titulo">HOJA DE INSCRIPCIÓN</h1>
+	
+	<h1 class="titulo">EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+	<form action="#" method="POST">
+		<fieldset id="fondo1">
+			<legend>Datos Personales</legend>
+			<table>
+				<tr>
+					<td><label for="nombre">Nombre:</label></td>
+					<td><label for="apellidos">Apellidos:</label></td>
+					<td><label for="dni">DNI:</label></td>
+				</tr>
+				<tr>
+					<td>
+					<input type="text" name="nombre"/> </td>
+					<td><input type="text" name="apeliido"/>
+					</td>
+					<td>
+						<input type="text" name="dni"/>	
+					</td>
+				</tr>
+				<tr>
+					<td><label for="localidad">Localidad de nacimiento:</label></td>
+					<td><label for="provincia">Provincia:</label></td>
+					<td><label for="fechan">Fecha de Nacimiento:</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="localidad"/></td>
+					<td><select name="provincia">
+							<option>Santander</option>
+							<option>Burgos</option>
+							<option>Logroño</option>
+							<option>Soria</option>
+							<option>Valladolid</option>
+							<option>Palencia</option>
+							<option>Madrid</option>
+						</select>
+					</td>
+					<td>
+						<input type="date" name="fechan"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><label for="direccion">Dirección:</label></td>
+					<td><label for="codpostal">Código Postal:</label></td>
+
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="text" name="direccion" size="40"/>
+					</td>
+					<td><input type="text" name="codpostal"/></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset id="fondo2">
+			<legend>Forma de acceso</legend>
 			<ul>
-
-				<li>El bloque de declaración contiene uno o más declaraciones separados por punto y coma.</li>
-
-				<li>Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.</li>
-
-				<li>Una declaración CSS siempre termina con un punto y coma, y ​​los bloques de declaraciones están rodeados por llaves.</li>
+				<li> <input type="radio" name="directo" value="directo"/>Directo
+					<ul>
+						<li><input type="radio" name="formaacceso" value="logse"/>Bachillerato log Modalidad: <input type="text" name="bachilleratomodalidad"/></li>
+						<li><input type="radio" name="formaacceso" value="experimental"/>Experimental</li>
+						<li><input type="radio" name="formaacceso" value="cou"/>COU opción: <input type="text" name="coumodalidad"/></li>
+						<li><input type="radio" name="formaacceso" value="fp2"/>FP2</li>
+						<li><input type="radio" name="formaacceso" value="otros"/>Otros especifique: <input type="text" name="especifiquemodalidad"/></li>
+					</ul>
+				</li>
+				<li>
+					<input type="radio" name="directo" value="prueba"/>Prueba Libre
+				</li>
 			</ul>
-		</li>
-	</ul>
-	<p>
-		En el siguiente ejemplo todas &lt;p&gt; elementos serán-centro alineados, con un color de texto de color rojo:</p>
-	
-	<h4 class="ejemplo"> Ejemplo<h4>
-	<div>
-		<img src="img/ejemplo.gif" alt="ejemplo" title="selector p">
-		<a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1">"Inténtalo tú mismo"</a>
-	</div>
-	<h3 class="antes">Los selectores CSS</h3>
-	<p>Los selectores CSS se utlizan para &quot;encontrar&quot; (o seleccionar) elementos HTML en función del nombre ( del elemento), ID, clase, atributo, etc.</p>
-		<hr>
-		<h3 class="despues">EL selector de los elementos</h3>
-		<p>El selector de elementos selecciona elemntos basados en el nombre del elemento.</p>
-		<p>Puedes seleccionar todos los elementos &lt;p&gt; en una página como ésta ( en este caso, todos los elementos &lt;p&gt; estarán centrados, y serán de color rojo):</p>
-	<h4 class="ejemplo">Ejemplo</h4>
-	<div>
-		<img src="img/ejemplo.gif" alt="ejemplo" title="selector p">
-		<a target="_blank" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1">"Inténtalo tú mismo"</a>
-	</div>
-	
-	
+		</fieldset>
 
 </body>
 </html>
